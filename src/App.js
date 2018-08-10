@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import ButtonBox from "./containers/ButtonBox/ButtonBox";
+
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>test</h1>
+        <ButtonBox />
       </div>
     );
   }
