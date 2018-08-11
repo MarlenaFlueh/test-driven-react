@@ -17,4 +17,10 @@ describe("<ButtonBox>", () => {
   it("should render Button", () => {
     expect(wrapper.find(Button));
   });
+
+  it("should change the state", () => {
+    wrapper.find(Button).simulate("click");
+
+    expect(wrapper.state().counter).toBe(1);
+  });
 });
