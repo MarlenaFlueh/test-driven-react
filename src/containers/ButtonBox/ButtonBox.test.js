@@ -23,4 +23,24 @@ describe("<ButtonBox>", () => {
 
     expect(wrapper.state().counter).toBe(1);
   });
+
+  it("should show hint, if number is equal to 1", () => {
+    wrapper.find(Button).simulate("click");
+
+    expect(
+      wrapper
+        .find("p")
+        .at(1)
+        .toBeNull()
+    );
+  });
+
+  it("shouldn't show hint, if number is equal to 0", () => {
+    expect(
+      wrapper
+        .find("p")
+        .at(1)
+        .toBe("Click Button!")
+    );
+  });
 });
