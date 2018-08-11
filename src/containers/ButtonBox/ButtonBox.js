@@ -10,7 +10,7 @@ const Box = styled.div`
   background-color: #fcf4ff;
 `;
 
-class ButtonBox extends Component {
+export class ButtonBox extends Component {
   state = {
     counter: 0
   };
